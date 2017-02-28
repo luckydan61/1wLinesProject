@@ -3,6 +3,7 @@
 
 extern void Test_one_num_sort();
 extern void Test_two_num_sort();
-
+extern void Test_three_num_sort();
+extern void Test_ten_num_sort();
 #endif
 
