@@ -1,10 +1,7 @@
 CC   = gcc
 GCOV = -fprofile-arcs -ftest-coverage
-OBJS =  TestMain.o \
-	TestBubbleSort.o \
-	bubbleSort.o \
-	TestInsertSort.o \
-	insertSort.o
+SRC  = $(wildcard *.c)
+OBJS = $(SRC:.c=.o)
 EXEC = 1wLines
 
 $(EXEC):$(OBJS)
