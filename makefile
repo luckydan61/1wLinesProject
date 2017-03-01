@@ -15,3 +15,10 @@ TestInsertSort.o: TestInsertSort.c
 
 insertSort.o: insertSort.c
 	gcc -fprofile-arcs -ftest-coverage -c insertSort.c
+
+.PHONY: 
+clean:
+	@rm *.gcda
+	@rm *.gcno
+	@rm *.o
+	@rm 1wLines

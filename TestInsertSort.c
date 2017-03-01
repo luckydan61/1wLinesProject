@@ -49,3 +49,13 @@ void Test_ten_num_insert_sort()
 	assert(array[8] == 8);
 	assert(array[9] == 9);
 }
+
+void Test_insert_sort()
+{
+	printf("Start to test insert sort.\n");
+	Test_one_num_insert_sort();
+	Test_two_num_insert_sort();
+	Test_three_num_insert_sort();
+	Test_ten_num_insert_sort();
+	printf("Test insert sort ok.\n");
+}

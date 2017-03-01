@@ -2,7 +2,7 @@
 #include <assert.h>
 #include "bubbleSort.h"
 
-void Test_one_num_sort()
+void Test_one_num_bubble_sort()
 {
 	int array[1] = {1};
 
@@ -11,7 +11,7 @@ void Test_one_num_sort()
 	assert(array[0] == 1);
 }
 
-void Test_two_num_sort()
+void Test_two_num_bubble_sort()
 {
 	int array[2] = {2, 1};
 
@@ -21,7 +21,7 @@ void Test_two_num_sort()
 	assert(array[1] == 2);
 }
 
-void Test_three_num_sort()
+void Test_three_num_bubble_sort()
 {
         int array[3] = {3, 2, 1};
 
@@ -32,7 +32,7 @@ void Test_three_num_sort()
 	assert(array[2] == 3);
 }
 
-void Test_ten_num_sort()
+void Test_ten_num_bubble_sort()
 {
         int array[10] = {2, 1, 5, 7, 3, 9, 0, 6, 4, 8};
 
@@ -48,4 +48,14 @@ void Test_ten_num_sort()
 	assert(array[7] == 7);
 	assert(array[8] == 8);
 	assert(array[9] == 9);
+}
+
+void Test_bubble_sort()
+{
+	printf("Start to test bubble sort.\n");
+	Test_one_num_bubble_sort();
+	Test_two_num_bubble_sort();
+	Test_three_num_bubble_sort();
+	Test_ten_num_bubble_sort();
+	printf("Test bubble sort ok.\n");
 }
