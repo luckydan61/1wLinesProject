@@ -1,10 +1,17 @@
+CC   = gcc
 GCOV = -fprofile-arcs -ftest-coverage
+OBJS =  TestMain.o \
+	TestBubbleSort.o \
+	bubbleSort.o \
+	TestInsertSort.o \
+	insertSort.o
+EXEC = 1wLines
 
-1wLines:TestMain.o TestBubbleSort.o bubbleSort.o TestInsertSort.o insertSort.o
-	gcc $(GCOV) -o 1wLines TestMain.o TestBubbleSort.o bubbleSort.o TestInsertSort.o insertSort.o
+$(EXEC):$(OBJS)
+	$(CC) $(GCOV) -o $(EXEC) $(OBJS)
 
 %.o: %.c
-	gcc $(GCOV) -c $^
+	$(CC) $(GCOV) -c $^
 .PHONY:
 clean:
 	@rm -rf *.gcov
