@@ -2,6 +2,7 @@
 #include "TestBubbleSort.h"
 #include "TestInsertSort.h"
 #include "TestMergeSort.h"
+#include "TestCountSort.h"
 
 int main()
 {
@@ -9,6 +10,7 @@ int main()
 	Test_bubble_sort();
 	Test_insert_sort();
 	Test_merge_sort();
+	Test_count_sort();
 	printf("=============== All Tests Passed! =============\n");
 	return 0;
 }
