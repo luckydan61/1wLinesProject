@@ -23,24 +23,24 @@ void Test_two_num_radix_sort()
 
 void Test_three_num_radix_sort()
 {
-        int array[3] = {3, 2, 1};
+	int array[3] = {3, 2, 1};
 
-        radixSort(array, 3);
+	radixSort(array, 3);
 
-        assert(array[0] == 1);
-        assert(array[1] == 2);
+	assert(array[0] == 1);
+	assert(array[1] == 2);
 	assert(array[2] == 3);
 }
 
 void Test_ten_num_radix_sort()
 {
-        int array[10] = {2, 1, 5, 7, 3, 9, 0, 6, 4, 8};
+	int array[10] = {2, 1, 5, 7, 3, 9, 0, 6, 4, 8};
 
-        radixSort(array, 10);
+	radixSort(array, 10);
 
-        assert(array[0] == 0);
+	assert(array[0] == 0);
 	assert(array[1] == 1);
-        assert(array[2] == 2);
+	assert(array[2] == 2);
 	assert(array[3] == 3);
 	assert(array[4] == 4);
 	assert(array[5] == 5);

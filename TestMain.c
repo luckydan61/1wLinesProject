@@ -5,6 +5,7 @@
 #include "TestCountSort.h"
 #include "TestRadixSort.h"
 #include "TestSelectSort.h"
+#include "TestQuickSort.h"
 
 int main()
 {
@@ -16,6 +17,7 @@ int main()
 	Test_count_sort();
 //	Test_radix_sort();
 	Test_select_sort();
+	Test_quick_sort();
 
 	printf("=============== All Tests Passed! =============\n");
 	return 0;
