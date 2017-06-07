@@ -6,6 +6,7 @@
 #include "TestRadixSort.h"
 #include "TestSelectSort.h"
 #include "TestQuickSort.h"
+#include "TestNum2Chinese.h"
 
 int main()
 {
@@ -18,6 +19,7 @@ int main()
 //	Test_radix_sort();
 	Test_select_sort();
 	Test_quick_sort();
+	Test_Num_2_Chinese();
 
 	printf("=============== All Tests Passed! =============\n");
 	return 0;
