@@ -16,3 +16,8 @@ clean:
 	@rm -rf *.gcno
 	@rm -rf *.o
 	@rm -rf 1wLines
+
+
+exec:
+	./$(EXEC)
+
