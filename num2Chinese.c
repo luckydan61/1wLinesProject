@@ -35,6 +35,8 @@ char * numUnit[] =
 	"千亿",
 };
 
+char chineseNum[100] = {0};
+
 void AnalyseNum(int num, int * numArr)
 {
 	int bit = 0;
@@ -79,10 +81,10 @@ void ConstructChineseNum(int * numArr, char * chineseNum)
 char * num2Chinese(int num)
 {
 	int numArr[10] = {0};
-	char chineseNum[100] = {0};
 
+	memset(chineseNum, 0, sizeof(numArr));
 	AnalyseNum(num, numArr);
 	ConstructChineseNum(numArr, chineseNum);
 	//printf("2: %s\n", chineseNum);
-	return &chineseNum;
+	return (char *)&chineseNum;
 }

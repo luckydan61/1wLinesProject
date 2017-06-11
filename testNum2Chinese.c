@@ -30,10 +30,16 @@ void TestRoundNumber()
 	assert(strcmp("一十亿", num2Chinese(1000000000)) == 0);
 }
 
+void TestOtherNumber()
+{
+	assert(strcmp("一十一", num2Chinese(11)) == 0);
+}
+
 void Test_Num_2_Chinese()
 {
 	printf("Start to test num2Chinese.\n");
 	TestSingleNum();
 	TestRoundNumber();
+	TestOtherNumber();
 	printf("Test num2Chinese ok.\n");
 }
