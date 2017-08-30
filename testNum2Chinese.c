@@ -33,6 +33,9 @@ void TestRoundNumber()
 void TestOtherNumber()
 {
 	assert(strcmp("一十一", num2Chinese(11)) == 0);
+	assert(strcmp("一百一十", num2Chinese(110)) == 0);
+	assert(strcmp("一百一十一", num2Chinese(111)) == 0);
+	//assert(strcmp("五十二万", num2Chinese(520000)) == 0);
 }
 
 void Test_Num_2_Chinese()
